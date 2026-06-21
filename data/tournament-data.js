@@ -29,8 +29,7 @@ window.TOURNAMENT_DATA = {
         "Avalon Racing__vs__UMAlliance": { "Sprint": "", "Mile": "", "Medium": "", "Long": "" }
       }
     },
-    {
-      "name": "GROUP B",
+    { "name": "GROUP B",
       "clubs": {
         "UMAlliance": {
           "Sprint": [["Jameson", "SUPER CREEK", "PC"], ["Nettle", "SILENCE SUZUKA", "FR"], ["Phedro", "AGNES DIGITAL", "EC"]],
@@ -57,8 +56,7 @@ window.TOURNAMENT_DATA = {
         "Tracen Academy__vs__Cabal Agency": { "Sprint": "Curren", "Mile": "Yunic", "Medium": "Hades", "Long": "Kage" }
       }
     },
-    {
-      "name": "GROUP C",
+    { "name": "GROUP C",
       "clubs": {
         "Uma Love": {
           "Sprint": [["Rem", "KING HALO", "EC"], ["Ori", "EL CONDOR PASA", "PC"], ["Saleh", "CURREN CHAN", "PC"]],
@@ -80,7 +78,7 @@ window.TOURNAMENT_DATA = {
         }
       },
       "results": {
-        "Uma Love__vs__FALENA": { "Sprint": "", "Mile": "", "Medium": "Chris4th", "Long": "" },
+        "Uma Love__vs__FALENA": { "Sprint": "Clowngeta", "Mile": "HoboPhoenix", "Medium": "Chris4th", "Long": "omatsuri mambo!" },
         "Uma Love__vs__BUNS": { "Sprint": "", "Mile": "", "Medium": "", "Long": "" },
         "FALENA__vs__BUNS": { "Sprint": "", "Mile": "", "Medium": "", "Long": "" }
       }
