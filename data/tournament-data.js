@@ -52,8 +52,8 @@ window.TOURNAMENT_DATA = {
       },
       "results": {
         "UMAlliance__vs__Tracen Academy": { "Sprint": "", "Mile": "", "Medium": "", "Long": "" },
-        "UMAlliance__vs__Cabal Agency": { "Sprint": "", "Mile": "", "Medium": "", "Long": "" },
-        "Tracen Academy__vs__Cabal Agency": { "Sprint": "", "Mile": "", "Medium": "", "Long": "" }
+        "UMAlliance__vs__Cabal Agency": { "Sprint": "Phedro", "Mile": "", "Medium": "", "Long": "" },
+        "Tracen Academy__vs__Cabal Agency": { "Sprint": "", "Mile": "Mint", "Medium": "", "Long": "" }
       }
     },
     { "name": "GROUP C",
