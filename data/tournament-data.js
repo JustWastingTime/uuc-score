@@ -25,7 +25,7 @@ window.TOURNAMENT_DATA = {
       },
       "results": {
         "Cabal Agency__vs__UMAlliance": { "Sprint": "Reimixqt", "Mile": "Jackson", "Medium": "BounciestTurnip", "Long": "Chungus Truther" },
-        "Avalon Racing__vs__Cabal Agency": { "Sprint": "", "Mile": "", "Medium": "", "Long": "" },
+        "Avalon Racing__vs__Cabal Agency": { "Sprint": "Nekata", "Mile": "WildCat", "Medium": "DualFreezor", "Long": "Chungus Truther" },
         "Avalon Racing__vs__UMAlliance": { "Sprint": "Value", "Mile": "Jackson", "Medium": "ProGuyLOL", "Long": "Veka" }
       }
     },
