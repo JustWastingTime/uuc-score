@@ -25,7 +25,7 @@ window.TOURNAMENT_DATA = {
       },
       "results": {
         "Cabal Agency__vs__UMAlliance": { "Sprint": "", "Mile": "", "Medium": "", "Long": "" },
-        "Avalon Racing__vs__Cabal Agency": { "Sprint": "Nekata", "Mile": "WildCat", "Medium": "DualFreezor", "Long": "Snailz" },
+        "Avalon Racing__vs__Cabal Agency": { "Sprint": "", "Mile": "", "Medium": "", "Long": "" },
         "Avalon Racing__vs__UMAlliance": { "Sprint": "", "Mile": "", "Medium": "", "Long": "" }
       }
     },
@@ -80,7 +80,7 @@ window.TOURNAMENT_DATA = {
         }
       },
       "results": {
-        "Uma Love__vs__FALENA": { "Sprint": "", "Mile": "", "Medium": "", "Long": "" },
+        "Uma Love__vs__FALENA": { "Sprint": "", "Mile": "", "Medium": "Chris4th", "Long": "" },
         "Uma Love__vs__BUNS": { "Sprint": "", "Mile": "", "Medium": "", "Long": "" },
         "FALENA__vs__BUNS": { "Sprint": "", "Mile": "", "Medium": "", "Long": "" }
       }
