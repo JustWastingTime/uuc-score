@@ -53,7 +53,7 @@ window.TOURNAMENT_DATA = {
       "results": {
         "UMAlliance__vs__Tracen Academy": { "Sprint": "", "Mile": "", "Medium": "", "Long": "" },
         "UMAlliance__vs__Cabal Agency": { "Sprint": "", "Mile": "", "Medium": "", "Long": "" },
-        "Tracen Academy__vs__Cabal Agency": { "Sprint": "Curren", "Mile": "Yunic", "Medium": "Hades", "Long": "Kage" }
+        "Tracen Academy__vs__Cabal Agency": { "Sprint": "", "Mile": "", "Medium": "", "Long": "" }
       }
     },
     { "name": "GROUP C",
@@ -80,7 +80,7 @@ window.TOURNAMENT_DATA = {
       "results": {
         "Uma Love__vs__FALENA": { "Sprint": "Clowngeta", "Mile": "HoboPhoenix", "Medium": "Chris4th", "Long": "omatsuri mambo!" },
         "Uma Love__vs__BUNS": { "Sprint": "", "Mile": "", "Medium": "", "Long": "" },
-        "FALENA__vs__BUNS": { "Sprint": "", "Mile": "", "Medium": "", "Long": "" }
+        "FALENA__vs__BUNS": { "Sprint": "Clowngeta", "Mile": "", "Medium": "", "Long": "" }
       }
     },
     {
