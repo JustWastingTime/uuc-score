@@ -1,0 +1,264 @@
+:root {
+  color-scheme: dark;
+  --bg: #0f1220;
+  --surface: #181c2e;
+  --surface-soft: #1f2440;
+  --text: #ebeeff;
+  --muted: #a8b0d6;
+  --line: #303860;
+  --accent: #7aa7ff;
+  --warning: #ffce7a;
+  --ok: #9affbc;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Segoe UI", Roboto, Arial, sans-serif;
+  background: linear-gradient(180deg, #0c1020 0%, #12162a 100%);
+  color: var(--text);
+}
+
+.hero {
+  border-bottom: 1px solid var(--line);
+  background: radial-gradient(circle at top right, #23346f 0%, transparent 48%);
+}
+
+.hero__inner,
+.container {
+  width: min(980px, 92vw);
+  margin: 0 auto;
+}
+
+.hero__inner {
+  padding: 2.2rem 0 2rem;
+}
+
+.eyebrow {
+  margin: 0 0 0.4rem;
+  text-transform: uppercase;
+  color: var(--muted);
+  letter-spacing: 0.09em;
+  font-size: 0.75rem;
+}
+
+h1 {
+  margin: 0;
+  font-size: clamp(1.8rem, 4vw, 2.5rem);
+}
+
+.subtitle {
+  margin: 0.7rem 0 0;
+  max-width: 720px;
+  color: var(--muted);
+}
+
+.container {
+  padding: 1.2rem 0 2rem;
+  display: grid;
+  gap: 1rem;
+}
+
+.summary-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 0.9rem;
+}
+
+.card {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  padding: 1rem;
+}
+
+.card--highlight {
+  background: linear-gradient(180deg, var(--surface-soft), var(--surface));
+}
+
+h2 {
+  margin: 0;
+  font-size: 1.1rem;
+}
+
+.value {
+  margin: 0.6rem 0 0;
+  font-size: 1.15rem;
+  font-weight: 600;
+}
+
+.value--unknown {
+  color: var(--warning);
+}
+
+.section-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.8rem;
+  margin-bottom: 0.6rem;
+}
+
+.badge {
+  font-size: 0.78rem;
+  border: 1px solid #4262b8;
+  color: #b7c9ff;
+  border-radius: 999px;
+  padding: 0.2rem 0.6rem;
+}
+
+.muted {
+  color: var(--muted);
+  margin-top: 0;
+}
+
+.updated-at {
+  margin: 0.8rem 0 0;
+  font-size: 0.85rem;
+}
+
+.field-label {
+  display: block;
+  margin: 0.8rem 0 0.3rem;
+  font-size: 0.9rem;
+}
+
+.field {
+  width: 100%;
+  border: 1px solid var(--line);
+  border-radius: 9px;
+  background: #11152b;
+  color: var(--text);
+  padding: 0.7rem 0.8rem;
+}
+
+.button {
+  border: 1px solid #3f5da9;
+  border-radius: 8px;
+  color: #d2ddff;
+  background: #233976;
+  padding: 0.5rem 0.7rem;
+  cursor: pointer;
+}
+
+.button:hover {
+  background: #2b448b;
+}
+
+.groups {
+  display: grid;
+  gap: 0.7rem;
+}
+
+details.group {
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  background: #10152c;
+}
+
+details.group summary {
+  cursor: pointer;
+  list-style: none;
+  padding: 0.8rem 0.9rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+}
+
+details.group summary::-webkit-details-marker {
+  display: none;
+}
+
+.group-title {
+  font-weight: 600;
+}
+
+.group-count {
+  color: var(--muted);
+  font-size: 0.88rem;
+}
+
+.entry-list {
+  margin: 0;
+  padding: 0 0.9rem 0.8rem 1.2rem;
+}
+
+.entry-list li {
+  margin: 0.35rem 0;
+  color: #dce3ff;
+}
+
+.entry-list mark {
+  background: #fff291;
+  color: #121212;
+  border-radius: 4px;
+  padding: 0 0.1rem;
+}
+
+.notes {
+  margin: 0.6rem 0 0;
+  padding-left: 1.15rem;
+  color: var(--muted);
+}
+
+.footer {
+  width: min(980px, 92vw);
+  margin: 0 auto;
+  padding: 0.3rem 0 2.2rem;
+  color: #9099c8;
+  font-size: 0.85rem;
+}
+
+.footer a {
+  color: #bcd0ff;
+}
+
+.club {
+  border-top: 1px solid #242d52;
+  padding: 0.7rem 0.9rem 0.85rem;
+}
+
+.club h3 {
+  margin: 0 0 0.55rem;
+  font-size: 0.98rem;
+}
+
+.cat-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+  gap: 0.55rem;
+}
+
+.cat {
+  border: 1px solid #2d3764;
+  border-radius: 8px;
+  background: #0c1125;
+  padding: 0.45rem 0.6rem;
+}
+
+.cat h4 {
+  margin: 0 0 0.35rem;
+  font-size: 0.86rem;
+  color: #bdcfff;
+}
+
+.cat ul {
+  margin: 0;
+  padding-left: 1.1rem;
+  font-size: 0.85rem;
+}
+
+.cat li {
+  margin: 0.2rem 0;
+}
+
+@media (max-width: 560px) {
+  .section-head {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
