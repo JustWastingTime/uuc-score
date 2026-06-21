@@ -112,7 +112,7 @@ window.TOURNAMENT_DATA = {
         }
       },
       "results": {
-        "Uma Sports / Temu Gooners__vs__Avalon Racing": { "Sprint": "GetBentScarlet", "Mile": "Hurricane", "Medium": "UUC | Shou", "Long": "" },
+        "Uma Sports / Temu Gooners__vs__Avalon Racing": { "Sprint": "GetBentScarlet", "Mile": "Hurricane", "Medium": "UUC | Shou", "Long": "Ammar" },
         "Uma Sports / Temu Gooners__vs__Revolt / Usurp": { "Sprint": "", "Mile": "", "Medium": "", "Long": "" },
         "Uma Sports / Temu Gooners__vs__Bakushin": { "Sprint": "", "Mile": "", "Medium": "", "Long": "" },
         "Avalon Racing__vs__Revolt / Usurp": { "Sprint": "", "Mile": "", "Medium": "", "Long": "" },
