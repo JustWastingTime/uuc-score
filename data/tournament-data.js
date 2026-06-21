@@ -24,9 +24,9 @@ window.TOURNAMENT_DATA = {
         }
       },
       "results": {
-        "Cabal Agency__vs__UMAlliance": { "Sprint": "Reimixqt", "Mile": "Jackson", "Medium": "", "Long": "Chungus Truther" },
+        "Cabal Agency__vs__UMAlliance": { "Sprint": "Reimixqt", "Mile": "Jackson", "Medium": "BounciestTurnip", "Long": "Chungus Truther" },
         "Avalon Racing__vs__Cabal Agency": { "Sprint": "", "Mile": "", "Medium": "", "Long": "" },
-        "Avalon Racing__vs__UMAlliance": { "Sprint": "Value", "Mile": "", "Medium": "", "Long": "" }
+        "Avalon Racing__vs__UMAlliance": { "Sprint": "Value", "Mile": "Jackson", "Medium": "ProGuyLOL", "Long": "Veka" }
       }
     },
     { "name": "GROUP B",
