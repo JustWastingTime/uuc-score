@@ -24,9 +24,9 @@ window.TOURNAMENT_DATA = {
         }
       },
       "results": {
-        "Cabal Agency__vs__UMAlliance": { "Sprint": "", "Mile": "", "Medium": "", "Long": "" },
+        "Cabal Agency__vs__UMAlliance": { "Sprint": "Reimixqt", "Mile": "Jackson", "Medium": "", "Long": "Chungus Truther" },
         "Avalon Racing__vs__Cabal Agency": { "Sprint": "", "Mile": "", "Medium": "", "Long": "" },
-        "Avalon Racing__vs__UMAlliance": { "Sprint": "", "Mile": "", "Medium": "", "Long": "" }
+        "Avalon Racing__vs__UMAlliance": { "Sprint": "Value", "Mile": "", "Medium": "", "Long": "" }
       }
     },
     { "name": "GROUP B",
@@ -79,7 +79,7 @@ window.TOURNAMENT_DATA = {
       },
       "results": {
         "Uma Love__vs__FALENA": { "Sprint": "Clowngeta", "Mile": "HoboPhoenix", "Medium": "Chris4th", "Long": "omatsuri mambo!" },
-        "Uma Love__vs__BUNS": { "Sprint": "Rem", "Mile": "Kai Aiya＠BUNS", "Medium": "", "Long": "" },
+        "Uma Love__vs__BUNS": { "Sprint": "Rem", "Mile": "Kai Aiya＠BUNS", "Medium": "plnk＠BUNS", "Long": "" },
         "FALENA__vs__BUNS": { "Sprint": "Clowngeta", "Mile": "UProb", "Medium": "vivi＠BUNS", "Long": "Korie" }
       }
     },
