@@ -1,5 +1,5 @@
 window.TOURNAMENT_DATA = {
-  "title": "UUC Score",
+  "title": "UCC Score",
   "groups": [
     { "name": "GROUP A",
       "clubs": {

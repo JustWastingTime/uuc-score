@@ -1,6 +1,6 @@
-# uuc-score
+# ucc-score
 
-Compact tournament scoreboard website for UUC with JSON-driven data.
+Compact tournament scoreboard website for UCC with JSON-driven data.
 
 ## Features
 - Winner/team/point summary cards at the top.
