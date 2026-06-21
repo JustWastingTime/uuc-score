@@ -114,7 +114,7 @@ window.TOURNAMENT_DATA = {
         "Uma Sports / Temu Gooners__vs__Revolt / Usurp": { "Sprint": "UUC | NasiBrianni", "Mile": "UUC | Koco", "Medium": "Wunke", "Long": "UUC | Tsunbaki" },
         "Uma Sports / Temu Gooners__vs__Bakushin": { "Sprint": "UUC | NasiBrianni", "Mile": "TwilightOnyx＿YT", "Medium": "UUC | Axie", "Long": "Ultra" },
         "Avalon Racing 2__vs__Revolt / Usurp": { "Sprint": "Karasu", "Mile": "Rat@TTA", "Medium": "Wunke", "Long": "Shnail" },
-        "Avalon Racing 2__vs__Bakushin": { "Sprint": "StyIX", "Mile": "Sora", "Medium": "default", "Long": "" },
+        "Avalon Racing 2__vs__Bakushin": { "Sprint": "StyIX", "Mile": "Sora", "Medium": "default", "Long": "Hatterem" },
         "Revolt / Usurp__vs__Bakushin": { "Sprint": "", "Mile": "", "Medium": "", "Long": "" }
       }
     }
