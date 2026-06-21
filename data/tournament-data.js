@@ -51,9 +51,9 @@ window.TOURNAMENT_DATA = {
         }
       },
       "results": {
-        "UMAlliance__vs__Tracen Academy": { "Sprint": "", "Mile": "", "Medium": "", "Long": "" },
-        "UMAlliance__vs__Cabal Agency": { "Sprint": "Phedro", "Mile": "", "Medium": "", "Long": "Jaya" },
-        "Tracen Academy__vs__Cabal Agency": { "Sprint": "", "Mile": "Mint", "Medium": "", "Long": "" }
+        "UMAlliance__vs__Tracen Academy": { "Sprint": "Duck", "Mile": "Haru", "Medium": "mochi", "Long": "Ishimorin" },
+        "UMAlliance__vs__Cabal Agency": { "Sprint": "Phedro", "Mile": "Yunic", "Medium": "shuucha", "Long": "Jaya" },
+        "Tracen Academy__vs__Cabal Agency": { "Sprint": "Curren", "Mile": "Mint", "Medium": "Hades", "Long": "Kage" }
       }
     },
     { "name": "GROUP C",
@@ -79,7 +79,7 @@ window.TOURNAMENT_DATA = {
       },
       "results": {
         "Uma Love__vs__FALENA": { "Sprint": "Clowngeta", "Mile": "HoboPhoenix", "Medium": "Chris4th", "Long": "omatsuri mambo!" },
-        "Uma Love__vs__BUNS": { "Sprint": "Rem", "Mile": "Kai Aiya＠BUNS", "Medium": "plnk＠BUNS", "Long": "" },
+        "Uma Love__vs__BUNS": { "Sprint": "Rem", "Mile": "Kai Aiya＠BUNS", "Medium": "plnk＠BUNS", "Long": "Crabpeople" },
         "FALENA__vs__BUNS": { "Sprint": "Clowngeta", "Mile": "UProb", "Medium": "vivi＠BUNS", "Long": "Korie" }
       }
     },

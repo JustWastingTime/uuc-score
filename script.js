@@ -143,7 +143,7 @@ function renderMatchups() {
         }
       }
       return `
-        <details class="group" open>
+        <details class="group">
           <summary>
             <span class="group-title">${escapeHtml(group.name)}</span>
             <span class="group-count">${pairs.length} team matchup${pairs.length > 1 ? "s" : ""}</span>
