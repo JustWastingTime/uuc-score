@@ -3,19 +3,19 @@ window.TOURNAMENT_DATA = {
   "groups": [
     { "name": "GROUP A",
       "clubs": {
-        "Cabal Agency": {
+        "Cabal Agency 2": {
           "Sprint": [["Nekata", "MARUZENSKY", "FR"], ["Kyrone", "SMART FALCON", "FR"], ["Chihiro", "HISHI AKEBONO", "PC"]],
           "Mile": [["WildCat", "TOKAI TEIO", "PC"], ["Cien22n2", "MIHONO BOURBON", "FR"], ["erc", "TAIKI SHUTTLE", "PC"]],
           "Medium": [["Mejiro McSimp", "NARITA BRIAN", "LS"], ["Horseyuu", "TM OPERA O", "LS"], ["Epiz", "SEIUN SKY", "FR"]],
           "Long": [["Chungus Truther", "HISHI AMAZON", "EC"], ["StirFryYutaka", "TAMAMO CROSS", "EC"], ["Haruru", "SYMBOLI RUDOLF", "LS"]]
         },
-        "UMAlliance": {
+        "UMAlliance 1": {
           "Sprint": [["Value", "AIR GROOVE", "LS"], ["Reimixqt", "KING HALO", "EC"], ["Matko", "EL CONDOR PASA", "PC"]],
           "Mile": [["Jackson", "NISHINO FLOWER", "PC"], ["Brendan", "OGURI CAP", "EC"], ["Skrapx", "VODKA", "LS"]],
           "Medium": [["BounciestTurnip", "NARITA TAISHIN", "EC"], ["tico", "MARUZENSKY", "FR"], ["Takamori", "SEIUN SKY", "FR"]],
           "Long": [["Veka", "MIHONO BOURBON", "FR"], ["Devil", "MEJIRO BRIGHT", "EC"], ["Diamond Boat", "MAYANO TOP GUN", "EC"]]
         },
-        "Avalon Racing": {
+        "Avalon Racing 1": {
           "Sprint": [["Raki", "KING HALO", "EC"], ["Kyuri", "NISHINO FLOWER", "PC"], ["NertMaGert", "CURREN CHAN", "PC"]],
           "Mile": [["poorpel", "OGURI CAP", "PC"], ["alto.", "HISHI AMAZON", "EC"], ["Ekotiko28", "MARUZENSKY", "FR"]],
           "Medium": [["DualFreezor", "DAIWA SCARLET", "FR"], ["ProGuyLOL", "NARITA TAISHIN", "EC"], ["Zaphkiel", "MIHONO BOURBON", "FR"]],
@@ -23,14 +23,14 @@ window.TOURNAMENT_DATA = {
         }
       },
       "results": {
-        "Cabal Agency__vs__UMAlliance": { "Sprint": "Reimixqt", "Mile": "Jackson", "Medium": "BounciestTurnip", "Long": "Chungus Truther" },
-        "Avalon Racing__vs__Cabal Agency": { "Sprint": "Nekata", "Mile": "WildCat", "Medium": "DualFreezor", "Long": "Chungus Truther" },
-        "Avalon Racing__vs__UMAlliance": { "Sprint": "Value", "Mile": "Jackson", "Medium": "ProGuyLOL", "Long": "Veka" }
+        "Cabal Agency 2__vs__UMAlliance 1": { "Sprint": "Reimixqt", "Mile": "Jackson", "Medium": "BounciestTurnip", "Long": "Chungus Truther" },
+        "Avalon Racing 1__vs__Cabal Agency 2": { "Sprint": "Nekata", "Mile": "WildCat", "Medium": "DualFreezor", "Long": "Chungus Truther" },
+        "Avalon Racing 1__vs__UMAlliance 1": { "Sprint": "Value", "Mile": "Jackson", "Medium": "ProGuyLOL", "Long": "Veka" }
       }
     },
     { "name": "GROUP B",
       "clubs": {
-        "UMAlliance": {
+        "UMAlliance 2": {
           "Sprint": [["Jameson", "SUPER CREEK", "PC"], ["Nettle", "SILENCE SUZUKA", "FR"], ["Phedro", "AGNES DIGITAL", "EC"]],
           "Mile": [["Rum", "FINE MOTION", "PC"], ["Lykos", "SYMBOLI RUDOLF", "LS"], ["THE OVERLORD", "MEJIRO MCQUEEN", "PC"]],
           "Medium": [["Toad＿33", "WINNING TICKET", "LS"], ["mochi", "AGNES TACHYON", "PC"], ["Duke", "TM OPERA O", "PC"]],
@@ -42,7 +42,7 @@ window.TOURNAMENT_DATA = {
           "Medium": [["Zhlyasa", "DAIWA SCARLET", "FR"], ["Meltup", "KITASAN BLACK", "FR"], ["Hades", "GOLD SHIP", "EC"]],
           "Long": [["Ishimorin", "MARUZENSKY", "FR"], ["Kage", "SEIUN SKY", "FR"], ["Fate", "MEJIRO BRIGHT", "LS"]]
         },
-        "Cabal Agency": {
+        "Cabal Agency 1": {
           "Sprint": [["Salty", "SAKURA BAKUSHIN O", "FR"], ["hoki", "MEJIRO MCQUEEN", "PC"], ["Curren", "CURREN CHAN", "PC"]],
           "Mile": [["DT Nep", "FUJI KISEKI", "PC"], ["shelty", "DAIWA SCARLET", "FR"], ["Yunic", "FINE MOTION", "PC"]],
           "Medium": [["shuucha", "INARI ONE", "EC"], ["Horsefight", "OGURI CAP", "EC"], ["Tn", "AGNES DIGITAL", "EC"]],
@@ -50,9 +50,9 @@ window.TOURNAMENT_DATA = {
         }
       },
       "results": {
-        "UMAlliance__vs__Tracen Academy": { "Sprint": "Duck", "Mile": "Haru", "Medium": "mochi", "Long": "Ishimorin" },
-        "UMAlliance__vs__Cabal Agency": { "Sprint": "Phedro", "Mile": "Yunic", "Medium": "shuucha", "Long": "Jaya" },
-        "Tracen Academy__vs__Cabal Agency": { "Sprint": "Curren", "Mile": "Mint", "Medium": "Hades", "Long": "Kage" }
+        "UMAlliance 2__vs__Tracen Academy": { "Sprint": "Duck", "Mile": "Haru", "Medium": "mochi", "Long": "Ishimorin" },
+        "UMAlliance 2__vs__Cabal Agency 1": { "Sprint": "Phedro", "Mile": "Yunic", "Medium": "shuucha", "Long": "Jaya" },
+        "Tracen Academy__vs__Cabal Agency 1": { "Sprint": "Curren", "Mile": "Mint", "Medium": "Hades", "Long": "Kage" }
       }
     },
     { "name": "GROUP C",
@@ -82,8 +82,7 @@ window.TOURNAMENT_DATA = {
         "FALENA__vs__BUNS": { "Sprint": "Clowngeta", "Mile": "UProb", "Medium": "vivi＠BUNS", "Long": "Korie" }
       }
     },
-    {
-      "name": "GROUP D",
+    { "name": "GROUP D",
       "clubs": {
         "Uma Sports / Temu Gooners": {
           "Sprint": [["UUC | NasiBrianni", "KING HALO", "EC"], ["UUC | DuhLeeted", "FUJI KISEKI", "PC"], ["UUC | rendienzo", "NISHINO FLOWER", "PC"]],
@@ -91,7 +90,7 @@ window.TOURNAMENT_DATA = {
           "Medium": [["UUC | Axie", "AGNES DIGITAL", "EC"], ["UUC | Shou", "TAMAMO CROSS", "EC"], ["Khaile", "MEJIRO BRIGHT", "LS"]],
           "Long": [["Ultra", "KITASAN BLACK", "FR"], ["UUC | Tsunbaki", "GOLD SHIP", "EC"], ["UUC | FishPineApl", "SILENCE SUZUKA", "FR"]]
         },
-        "Avalon Racing": {
+        "Avalon Racing 2": {
           "Sprint": [["Python", "HISHI AKEBONO", "PC"], ["HiBruh", "AIR GROOVE", "LS"], ["GetBentScarlet", "SAKURA BAKUSHIN O", "PC"]],
           "Mile": [["Nick", "AGNES DIGITAL", "LS"], ["Jitzing", "MEJIRO DOBER", "LS"], ["Deez", "TAIKI SHUTTLE", "PC"]],
           "Medium": [["Tiger", "TAMAMO CROSS", "EC"], ["Jackdude345", "MEJIRO ARDAN", "PC"], ["Satzu", "SWEEP TOSHO", "EC"]],
@@ -111,11 +110,11 @@ window.TOURNAMENT_DATA = {
         }
       },
       "results": {
-        "Uma Sports / Temu Gooners__vs__Avalon Racing": { "Sprint": "GetBentScarlet", "Mile": "Hurricane", "Medium": "UUC | Shou", "Long": "Ammar" },
+        "Uma Sports / Temu Gooners__vs__Avalon Racing 2": { "Sprint": "GetBentScarlet", "Mile": "Hurricane", "Medium": "UUC | Shou", "Long": "Ammar" },
         "Uma Sports / Temu Gooners__vs__Revolt / Usurp": { "Sprint": "UUC | NasiBrianni", "Mile": "UUC | Koco", "Medium": "Wunke", "Long": "UUC | Tsunbaki" },
-        "Uma Sports / Temu Gooners__vs__Bakushin": { "Sprint": "UUC | NasiBrianni", "Mile": "TwilightOnyx＿YT", "Medium": "UUC | Axie", "Long": "" },
-        "Avalon Racing__vs__Revolt / Usurp": { "Sprint": "", "Mile": "", "Medium": "", "Long": "" },
-        "Avalon Racing__vs__Bakushin": { "Sprint": "", "Mile": "", "Medium": "", "Long": "" },
+        "Uma Sports / Temu Gooners__vs__Bakushin": { "Sprint": "UUC | NasiBrianni", "Mile": "TwilightOnyx＿YT", "Medium": "UUC | Axie", "Long": "Ultra" },
+        "Avalon Racing 2__vs__Revolt / Usurp": { "Sprint": "Karasu", "Mile": "", "Medium": "", "Long": "" },
+        "Avalon Racing 2__vs__Bakushin": { "Sprint": "", "Mile": "", "Medium": "", "Long": "" },
         "Revolt / Usurp__vs__Bakushin": { "Sprint": "", "Mile": "", "Medium": "", "Long": "" }
       }
     }
