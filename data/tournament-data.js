@@ -113,7 +113,7 @@ window.TOURNAMENT_DATA = {
       "results": {
         "Uma Sports / Temu Gooners__vs__Avalon Racing": { "Sprint": "GetBentScarlet", "Mile": "Hurricane", "Medium": "UUC | Shou", "Long": "Ammar" },
         "Uma Sports / Temu Gooners__vs__Revolt / Usurp": { "Sprint": "UUC | NasiBrianni", "Mile": "UUC | Koco", "Medium": "Wunke", "Long": "UUC | Tsunbaki" },
-        "Uma Sports / Temu Gooners__vs__Bakushin": { "Sprint": "", "Mile": "", "Medium": "", "Long": "" },
+        "Uma Sports / Temu Gooners__vs__Bakushin": { "Sprint": "UUC | NasiBrianni", "Mile": "TwilightOnyx＿YT", "Medium": "", "Long": "" },
         "Avalon Racing__vs__Revolt / Usurp": { "Sprint": "", "Mile": "", "Medium": "", "Long": "" },
         "Avalon Racing__vs__Bakushin": { "Sprint": "", "Mile": "", "Medium": "", "Long": "" },
         "Revolt / Usurp__vs__Bakushin": { "Sprint": "", "Mile": "", "Medium": "", "Long": "" }
