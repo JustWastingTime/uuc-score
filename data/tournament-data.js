@@ -1,11 +1,5 @@
 window.TOURNAMENT_DATA = {
   "title": "UUC Score",
-  "summary": {
-    "tournamentWinner": "TBD by organizers",
-    "topTeam": "TBD by organizers",
-    "finalPointTally": "Pending official post",
-    "updatedAt": "2026-06-21"
-  },
   "groups": [
     {
       "name": "GROUP A",
@@ -28,6 +22,11 @@ window.TOURNAMENT_DATA = {
           "Medium": [["DualFreezor", "DAIWA SCARLET", "FR"], ["ProGuyLOL", "NARITA TAISHIN", "EC"], ["Zaphkiel", "MIHONO BOURBON", "FR"]],
           "Long": [["Snailz", "SPECIAL WEEK", "LS"], ["Alfejd", "KITASAN BLACK", "FR"], ["OwObsidian", "GOLD SHIP", "EC"]]
         }
+      },
+      "results": {
+        "Cabal Agency__vs__UMAlliance": { "Sprint": "", "Mile": "", "Medium": "", "Long": "" },
+        "Avalon Racing__vs__Cabal Agency": { "Sprint": "Nekata", "Mile": "WildCat", "Medium": "DualFreezor", "Long": "Snailz" },
+        "Avalon Racing__vs__UMAlliance": { "Sprint": "", "Mile": "", "Medium": "", "Long": "" }
       }
     },
     {
@@ -51,6 +50,11 @@ window.TOURNAMENT_DATA = {
           "Medium": [["shuucha", "INARI ONE", "EC"], ["Horsefight", "OGURI CAP", "EC"], ["Tn", "AGNES DIGITAL", "EC"]],
           "Long": [["GlNZO", "SWEEP TOSHO", "EC"], ["ONEWINGEDANGEL", "MAYANO TOP GUN", "EC"], ["Sapphire", "SATONO DIAMOND", "LS"]]
         }
+      },
+      "results": {
+        "UMAlliance__vs__Tracen Academy": { "Sprint": "", "Mile": "", "Medium": "", "Long": "" },
+        "UMAlliance__vs__Cabal Agency": { "Sprint": "", "Mile": "", "Medium": "", "Long": "" },
+        "Tracen Academy__vs__Cabal Agency": { "Sprint": "Curren", "Mile": "Yunic", "Medium": "Hades", "Long": "Kage" }
       }
     },
     {
@@ -74,6 +78,11 @@ window.TOURNAMENT_DATA = {
           "Medium": [["plnk＠BUNS", "ADMIRE VEGA", "EC"], ["vivi＠BUNS", "KITASAN BLACK", "FR"], ["Spurs＠BUNS", "AGNES TACHYON", "PC"]],
           "Long": [["Kylian Umappe", "SEIUN SKY", "FR"], ["Minh＠BUNS", "MIHONO BOURBON", "FR"], ["Crabpeople", "GOLD SHIP", "EC"]]
         }
+      },
+      "results": {
+        "Uma Love__vs__FALENA": { "Sprint": "", "Mile": "", "Medium": "", "Long": "" },
+        "Uma Love__vs__BUNS": { "Sprint": "", "Mile": "", "Medium": "", "Long": "" },
+        "FALENA__vs__BUNS": { "Sprint": "", "Mile": "", "Medium": "", "Long": "" }
       }
     },
     {
@@ -103,6 +112,14 @@ window.TOURNAMENT_DATA = {
           "Medium": [["Nyukn", "NARITA TAISHIN", "EC"], ["Natho", "OGURI CAP", "LS"], ["default", "GOLD SHIP", "EC"]],
           "Long": [["Mechli", "TM OPERA O", "PC"], ["Xephyrious", "MANHATTAN CAFE", "LS"], ["FreakySky", "SEIUN SKY", "FR"]]
         }
+      },
+      "results": {
+        "Uma Sports / Temu Gooners__vs__Avalon Racing": { "Sprint": "", "Mile": "", "Medium": "", "Long": "" },
+        "Uma Sports / Temu Gooners__vs__Revolt / Usurp": { "Sprint": "", "Mile": "", "Medium": "", "Long": "" },
+        "Uma Sports / Temu Gooners__vs__Bakushin": { "Sprint": "", "Mile": "", "Medium": "", "Long": "" },
+        "Avalon Racing__vs__Revolt / Usurp": { "Sprint": "", "Mile": "", "Medium": "", "Long": "" },
+        "Avalon Racing__vs__Bakushin": { "Sprint": "", "Mile": "", "Medium": "", "Long": "" },
+        "Revolt / Usurp__vs__Bakushin": { "Sprint": "", "Mile": "", "Medium": "", "Long": "" }
       }
     }
   ]

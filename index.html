@@ -11,69 +11,18 @@
       <div class="hero__inner">
         <p class="eyebrow">Uma Championship Cup</p>
         <h1>UUC Score</h1>
-        <p class="subtitle">
-          Faster to read, easier to follow. Missing results are marked clearly as
-          organizers confirm them.
-        </p>
       </div>
     </header>
 
     <main class="container">
-      <section class="summary-grid" aria-label="Tournament summary">
-        <article class="card card--highlight">
-          <h2>Tournament Winner</h2>
-          <p id="winnerValue" class="value value--unknown">TBD by organizers</p>
-        </article>
-        <article class="card card--highlight">
-          <h2>Top Team</h2>
-          <p id="teamValue" class="value value--unknown">TBD by organizers</p>
-        </article>
-        <article class="card card--highlight">
-          <h2>Final Point Tally</h2>
-          <p id="pointsValue" class="value value--unknown">Pending official post</p>
-        </article>
-      </section>
-
       <section class="card">
-        <div class="section-head">
-          <h2>Quick Filters</h2>
-          <button id="expandAllBtn" class="button" type="button">Expand All</button>
-        </div>
-        <p class="muted">
-          Use the search to jump to a specific runner or team without scrolling through a long page.
-        </p>
-        <label for="searchInput" class="field-label">Search runner or team</label>
-        <input
-          id="searchInput"
-          class="field"
-          type="search"
-          placeholder="Example: Special Week, Team A"
-          autocomplete="off"
-        />
-        <p id="updatedAt" class="muted updated-at"></p>
-      </section>
-
-      <section class="card">
-        <div class="section-head">
-          <h2>Group Stage Matchups</h2>
-          <span class="badge">Compact View</span>
-        </div>
-        <div id="groupsContainer" class="groups"></div>
-      </section>
-
-      <section class="card">
-        <h2>Organizer Notes</h2>
-        <ul class="notes">
-          <li>Winner details were not included in the latest post.</li>
-          <li>Team champion was not announced.</li>
-          <li>Final scoring numbers are still pending confirmation.</li>
-        </ul>
+        <h2>Head-to-Head Matchups</h2>
+        <div id="matchupsContainer" class="groups"></div>
       </section>
     </main>
 
     <footer class="footer">
       <p>UUC Score • Community unofficial board</p>
-      <p><a href="./data/tournament.json" target="_blank" rel="noreferrer">Admin JSON (edit this file)</a></p>
     </footer>
 
     <script src="./data/tournament-data.js"></script>

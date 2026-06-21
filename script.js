@@ -1,12 +1,7 @@
-const groupsContainer = document.getElementById("groupsContainer");
-const searchInput = document.getElementById("searchInput");
-const expandAllBtn = document.getElementById("expandAllBtn");
-const winnerValue = document.getElementById("winnerValue");
-const teamValue = document.getElementById("teamValue");
-const pointsValue = document.getElementById("pointsValue");
-const updatedAtValue = document.getElementById("updatedAt");
+const matchupsContainer = document.getElementById("matchupsContainer");
 
 let tournament = null;
+const categories = ["Sprint", "Mile", "Medium", "Long"];
 
 function escapeHtml(value) {
   return value
@@ -17,107 +12,155 @@ function escapeHtml(value) {
     .replaceAll("'", "&#039;");
 }
 
-function highlight(text, query) {
-  if (!query.trim()) return escapeHtml(text);
-
-  const safeText = escapeHtml(text);
-  const safeQuery = query.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
-  const regex = new RegExp(`(${safeQuery})`, "ig");
-  return safeText.replace(regex, "<mark>$1</mark>");
-}
-
 function raceEntryToText(entry) {
   return `${entry[0]} - ${entry[1]} (${entry[2]})`;
 }
 
-function renderClub(clubName, races, query) {
-  const categories = ["Sprint", "Mile", "Medium", "Long"];
-  const renderedCats = categories
-    .map((cat) => {
-      const entries = races[cat] || [];
-      const filtered = entries.filter((entry) =>
-        raceEntryToText(entry).toLowerCase().includes(query)
-      );
-      if (query && filtered.length === 0) return "";
-      const source = query ? filtered : entries;
-      const list = source
-        .map((entry) => `<li>${highlight(raceEntryToText(entry), query)}</li>`)
-        .join("");
-      return `<article class="cat"><h4>${cat}</h4><ul>${list}</ul></article>`;
+function findPairResults(results, teamA, teamB) {
+  return (
+    results[`${teamA}__vs__${teamB}`] ||
+    results[`${teamB}__vs__${teamA}`] ||
+    {}
+  );
+}
+
+function teamOfTrainer(club, category, trainerName) {
+  const entries = (club && club[category]) || [];
+  return entries.some(
+    (entry) => String(entry[0]).toLowerCase() === trainerName.toLowerCase()
+  );
+}
+
+function getCategoryResult(group, teamA, teamB, category) {
+  const results = group.results || {};
+  const pairResults = findPairResults(results, teamA, teamB);
+  const winnerTrainer = pairResults[category] || "";
+  if (!winnerTrainer) return { winnerTrainer: "", winnerTeam: "" };
+
+  if (teamOfTrainer(group.clubs[teamA], category, winnerTrainer)) {
+    return { winnerTrainer, winnerTeam: teamA };
+  }
+  if (teamOfTrainer(group.clubs[teamB], category, winnerTrainer)) {
+    return { winnerTrainer, winnerTeam: teamB };
+  }
+  return { winnerTrainer, winnerTeam: "" };
+}
+
+function scorePair(group, teamA, teamB) {
+  let scoreA = 0;
+  let scoreB = 0;
+  categories.forEach((category) => {
+    const { winnerTeam } = getCategoryResult(group, teamA, teamB, category);
+    if (winnerTeam === teamA) scoreA += 1;
+    if (winnerTeam === teamB) scoreB += 1;
+  });
+  return { scoreA, scoreB };
+}
+
+function renderLineup(entries, winnerTrainer) {
+  if (!entries || entries.length === 0) {
+    return '<li class="lineup-item lineup-item--empty">No entry</li>';
+  }
+  return entries
+    .map((entry) => {
+      const isWinner =
+        winnerTrainer &&
+        String(entry[0]).toLowerCase() === winnerTrainer.toLowerCase();
+      const cls = isWinner ? "lineup-item lineup-item--won" : "lineup-item";
+      const crown = isWinner ? '<span class="crown" title="Match winner">&#128081;</span> ' : "";
+      return `<li class="${cls}">${crown}${escapeHtml(raceEntryToText(entry))}</li>`;
+    })
+    .join("");
+}
+
+function winnerText(winnerTeam) {
+  if (winnerTeam) return `Winner: ${winnerTeam}`;
+  return "Winner: Pending";
+}
+
+function renderPair(group, teamA, teamB) {
+  const { scoreA, scoreB } = scorePair(group, teamA, teamB);
+  const clubA = group.clubs[teamA];
+  const clubB = group.clubs[teamB];
+  const rows = categories
+    .map((category) => {
+      const { winnerTrainer, winnerTeam } = getCategoryResult(group, teamA, teamB, category);
+      const leftClass =
+        winnerTeam === teamA
+          ? "lineup lineup--winner"
+          : winnerTeam
+            ? "lineup lineup--loser"
+            : "lineup";
+      const rightClass =
+        winnerTeam === teamB
+          ? "lineup lineup--winner"
+          : winnerTeam
+            ? "lineup lineup--loser"
+            : "lineup";
+
+      return `
+        <div class="duel-row">
+          <section class="${leftClass}">
+            <h4 class="lineup-title">${escapeHtml(teamA)}</h4>
+            <ul class="lineup-list">${renderLineup(clubA[category], winnerTrainer)}</ul>
+          </section>
+          <section class="duel-center">
+            <span class="category-tag">${category}</span>
+            <span class="duel-winner">${escapeHtml(winnerText(winnerTeam))}</span>
+          </section>
+          <section class="${rightClass}">
+            <h4 class="lineup-title">${escapeHtml(teamB)}</h4>
+            <ul class="lineup-list">${renderLineup(clubB[category], winnerTrainer)}</ul>
+          </section>
+        </div>
+      `;
     })
     .join("");
 
-  if (!renderedCats) return "";
-  return `<section class="club"><h3>${escapeHtml(clubName)}</h3><div class="cat-grid">${renderedCats}</div></section>`;
+  return `
+    <article class="pair-card">
+      <div class="pair-head">
+        <div class="pair-title">${escapeHtml(teamA)} vs ${escapeHtml(teamB)}</div>
+        <div class="pair-score">${escapeHtml(teamA)} ${scoreA} : ${scoreB} ${escapeHtml(teamB)}</div>
+      </div>
+      ${rows}
+    </article>
+  `;
 }
 
-function renderGroups(query = "") {
-  const needle = query.trim().toLowerCase();
+function renderMatchups() {
   if (!tournament) return;
 
-  const items = tournament.groups
+  const html = tournament.groups
     .map((group) => {
-      const clubBlocks = Object.entries(group.clubs)
-        .map(([clubName, races]) => renderClub(clubName, races, needle))
-        .filter(Boolean)
-        .join("");
-
-      if (needle && !clubBlocks) return "";
-      const clubCount = Object.keys(group.clubs).length;
+      const teams = Object.keys(group.clubs);
+      const pairs = [];
+      for (let i = 0; i < teams.length; i += 1) {
+        for (let j = i + 1; j < teams.length; j += 1) {
+          const teamA = teams[i];
+          const teamB = teams[j];
+          pairs.push(renderPair(group, teamA, teamB));
+        }
+      }
       return `
-      <details class="group" ${needle ? "open" : ""}>
-        <summary>
-          <span class="group-title">${escapeHtml(group.name)}</span>
-          <span class="group-count">${clubCount} club${clubCount > 1 ? "s" : ""}</span>
-        </summary>
-        ${clubBlocks}
-      </details>
-    `;
+        <details class="group" open>
+          <summary>
+            <span class="group-title">${escapeHtml(group.name)}</span>
+            <span class="group-count">${pairs.length} team matchup${pairs.length > 1 ? "s" : ""}</span>
+          </summary>
+          <div class="club">${pairs.join("")}</div>
+        </details>
+      `;
     })
     .join("");
 
-  groupsContainer.innerHTML =
-    items ||
-    `<p class="muted">No matchups found. Try another keyword.</p>`;
+  matchupsContainer.innerHTML = html;
 }
 
-searchInput.addEventListener("input", (event) => {
-  renderGroups(event.target.value);
-});
-
-expandAllBtn.addEventListener("click", () => {
-  const details = groupsContainer.querySelectorAll("details.group");
-  const shouldExpand = expandAllBtn.textContent === "Expand All";
-  details.forEach((element) => {
-    element.open = shouldExpand;
-  });
-  expandAllBtn.textContent = shouldExpand ? "Collapse All" : "Expand All";
-});
-
-async function loadTournament() {
-  try {
-    const response = await fetch("./data/tournament.json", { cache: "no-store" });
-    if (!response.ok) {
-      throw new Error("JSON request failed");
-    }
-    tournament = await response.json();
-  } catch (_error) {
-    if (window.TOURNAMENT_DATA) {
-      tournament = window.TOURNAMENT_DATA;
-    } else {
-      throw _error;
-    }
-  }
-
-  winnerValue.textContent = tournament.summary.tournamentWinner;
-  teamValue.textContent = tournament.summary.topTeam;
-  pointsValue.textContent = tournament.summary.finalPointTally;
-  updatedAtValue.textContent = `Last updated: ${tournament.summary.updatedAt}`;
-
-  renderGroups();
+if (window.TOURNAMENT_DATA) {
+  tournament = window.TOURNAMENT_DATA;
+  renderMatchups();
+} else {
+  matchupsContainer.innerHTML =
+    '<p class="muted">Failed to load data. Check `data/tournament-data.js`.</p>';
 }
-
-loadTournament().catch(() => {
-  groupsContainer.innerHTML =
-    '<p class="muted">Failed to load data. Run a local server or verify `data/tournament.json`.</p>';
-});
