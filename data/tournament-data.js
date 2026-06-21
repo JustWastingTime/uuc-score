@@ -80,7 +80,7 @@ window.TOURNAMENT_DATA = {
       "results": {
         "Uma Love__vs__FALENA": { "Sprint": "Clowngeta", "Mile": "HoboPhoenix", "Medium": "Chris4th", "Long": "omatsuri mambo!" },
         "Uma Love__vs__BUNS": { "Sprint": "", "Mile": "", "Medium": "", "Long": "" },
-        "FALENA__vs__BUNS": { "Sprint": "Clowngeta", "Mile": "UProb", "Medium": "vivi＠BUNS", "Long": "" }
+        "FALENA__vs__BUNS": { "Sprint": "Clowngeta", "Mile": "UProb", "Medium": "vivi＠BUNS", "Long": "Korie" }
       }
     },
     {
